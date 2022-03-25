@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Producto</title>
+    <title>Document</title>
 </head>
 <body>
-    <form action="{% url 'insert_type_product' %}" method="POST">
-        {% csrf_token %}
-        {{form}}
-        <button type="submit">Save</button>
-    </form>
+    Nombre = {{products.name}}
+    Id = {{products.id}}
+    Desc = {{products.desc}}
 </body>
 </html>
